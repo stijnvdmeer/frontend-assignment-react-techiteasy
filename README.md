@@ -29,7 +29,7 @@ volgende informatie:
 * `originalStock` - de hoeveelheid exemplaren van dit type die tijdens deze voorraad-batch zijn ingekocht
 * `sold` - de hoeveelheid verkochte exemplaren van dit type
 
-## Deel 1
+## Deel 1 (les 1)
 
 Door de opdrachten te maken bouw je langzaam het eerste deel van het Tech It Easy Dashboard op. Je bent vrij om de
 styling van het voorbeeld over te nemen, of jouw eigen huisstijl te bedenken. Zorg er wel voor dat je eerst aan de slag
@@ -101,7 +101,7 @@ heeft (`[43, 50, 55, 58]`) wordt de output `43 inch (109 cm) | 50 inch (127 cm) 
   worden. _Tip:_ functies die worden uitgevoerd op basis van een event, declareer je altijd in het component zelf: dit
   zijn geen helpers.
 
-## Deel 2
+## Deel 2 (les 2)
 
 Je gaat verschillende methodes gebruiken om de informatie over alle tv's op een zo efficient mogelijke manier weer te
 geven.
