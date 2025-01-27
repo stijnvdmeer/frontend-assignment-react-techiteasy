@@ -1,0 +1,23 @@
+
+.salesoverview {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+
+}
+
+#salesoverview-soldproducts {
+    background-color: lightgreen;
+    border: 3px solid green;
+}
+#salesoverview-orderedproducts {
+    background-color: lightblue;
+    border: 3px solid dodgerblue;
+}
+#salesoverview-remnantproducts {
+    background-color: lightcoral;
+    border: 3px solid red;
+
+}
