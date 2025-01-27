@@ -6,6 +6,5 @@ export default function () {
     inventory.forEach(item => {
        orderedProducts += item.originalStock;
     });
-    console.log(orderedProducts);
     return orderedProducts;
 }

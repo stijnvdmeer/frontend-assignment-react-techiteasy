@@ -7,6 +7,5 @@ export default function () {
         soldProducts += item.sold;
     });
 
-    console.log(soldProducts);
     return soldProducts;
 }
