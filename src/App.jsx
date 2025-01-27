@@ -8,6 +8,7 @@ import calculateOrderedProducts from "./helperFuntions/calculateOrderedProducts.
 import calculateRemnantProducts from "./helperFuntions/calculateRemnantProducts.js";
 import getProductTitleString from "./helperFuntions/getProductTitleString.js";
 import formatPriceString from "./helperFuntions/formatPriceString.js";
+import getProductSizesString from "./helperFuntions/getProductSizesString.js";
 
 function App() {
   return (
@@ -27,7 +28,7 @@ function App() {
               <div className="bestSoldArticle-inner">
                   <h2>{getProductTitleString()}</h2>
                   <h2>{formatPriceString(bestSellingTv.price)}</h2>
-                  <h2>43, 50, 55, 65</h2>
+                  <h2>{getProductSizesString()}</h2>
               </div>
           </article>
         </div>
