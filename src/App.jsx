@@ -1,4 +1,4 @@
-import './App.css';
+import './styles/App.css';
 
 import SalesOverview from "./components/SalesOverview.jsx";
 
@@ -19,7 +19,14 @@ function App() {
           </div>
 
           <h2>Best verkochte tv</h2>
-          <article></article>
+          <article className="bestSoldArticle-outer">
+              <img src="https://image.coolblue.nl/max/500x500/products/1786196" alt="picture of computer monitor"/>
+              <div className="bestSoldArticle-inner">
+                  <h2>Samsung UHD 55AU7040 Crystal</h2>
+                  <h2>$549</h2>
+                  <h2>43, 50, 55, 65</h2>
+              </div>
+          </article>
         </div>
       </main>
   )
