@@ -8,6 +8,22 @@
     flex-direction: column;
     flex-basis: 95vw;
 }
+.icons {
+    height: 25px;
+    width: 25px;
+}
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+
+    li {
+        background-color: lightyellow;
+        border: 3px solid yellow;
+        padding: 10px;
+        border-radius: 10px;
+    }
+}
 
 .salesOverviews {
     display: flex;

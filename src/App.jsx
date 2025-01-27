@@ -1,4 +1,8 @@
 import './styles/App.css';
+
+import check from './assets/check.png';
+import minus from './assets/minus.png';
+
 import {bestSellingTv} from "./constants/inventory.js";
 
 import SalesOverview from "./components/SalesOverview.jsx";
@@ -29,6 +33,26 @@ function App() {
                   <h2>{getProductTitleString()}</h2>
                   <h2>{formatPriceString(bestSellingTv.price)}</h2>
                   <h2>{getProductSizesString()}</h2>
+                  <span>
+
+                  </span>
+                  <ul>
+                      <li>
+                          <img className="icons" src={check} alt="yes"/><p>wifi</p>
+                      </li>
+                      <li>
+                          <img className="icons" src={minus} alt="no"/><p>speech</p>
+                      </li>
+                      <li>
+                          <img className="icons" src={check} alt="yes"/><p>hdr</p>
+                      </li>
+                      <li>
+                          <img className="icons" src={check} alt="yes"/><p>bluetooth</p>
+                      </li>
+                      <li>
+                          <img className="icons" src={minus} alt="no"/><p>ambilight</p>
+                      </li>
+                  </ul>
               </div>
           </article>
         </div>
