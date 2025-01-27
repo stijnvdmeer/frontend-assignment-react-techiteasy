@@ -3,8 +3,7 @@ import './App.css';
 import SalesOverview from "./components/SalesOverview.jsx";
 
 import calculateSoldProducts from "./helperFuntions/calculateSoldProducts.js";
-
-calculateSoldProducts();
+import calculateOrderedProducts from "./helperFuntions/calculateOrderedProducts.js";
 
 function App() {
   return (
@@ -14,7 +13,7 @@ function App() {
           <h2>Verkoopoverzicht</h2>
           <div className="salesOverviews">
               <SalesOverview title="Aantal verkochte producten" value={calculateSoldProducts()} classes="salesoverview" id="salesoverview-soldproducts" />
-              <SalesOverview title="Aantal ingekochte producten" value="13" classes="salesoverview" id="salesoverview-orderedproducts" />
+              <SalesOverview title="Aantal ingekochte producten" value={calculateOrderedProducts()} classes="salesoverview" id="salesoverview-orderedproducts" />
               <SalesOverview title="Aantal te verkopen producten" value="13" classes="salesoverview" id="salesoverview-remnantproducts" />
           </div>
 
