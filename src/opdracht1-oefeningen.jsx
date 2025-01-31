@@ -24,3 +24,11 @@ const sportTVs = inventory.map((tv) => {
     else return {name: tv.name, available:false};
 });
 console.log(sportTVs);
+
+// opdracht 1e
+const largeTVs = inventory.filter((tv) => {
+    return !!tv.availableSizes.find((size) => {
+        return size >= 65;
+    });
+});
+console.log(largeTVs);
