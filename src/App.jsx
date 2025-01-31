@@ -1,8 +1,11 @@
 import './styles/App.css';
+import './opdracht1-oefeningen.jsx';
 
 function App() {
   return (
-    <h1>Begin hier met met maken van de applicatie!</h1>
+    <>
+        <h1>Alle TVs</h1>
+    </>
   )
 }
 
