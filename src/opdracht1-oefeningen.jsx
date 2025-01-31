@@ -1,4 +1,4 @@
-import {inventory} from './constants/inventory.js'
+import {bestSellingTv as options, inventory} from './constants/inventory.js'
 
 // Opdracht 1a
 const arrNames = inventory.map((item) => {
@@ -32,3 +32,11 @@ const largeTVs = inventory.filter((tv) => {
     });
 });
 console.log(largeTVs);
+
+// Opdracht 1f
+const ambiTVs = inventory.filter((tv) => {
+    return tv.options.find((option) => {
+        return option.name === "ambiLight";
+    }).applicable === true;
+});
+console.log(ambiTVs);
