@@ -6,4 +6,8 @@ const arrNames = inventory.map(item => {
 })
 console.log(arrNames);
 
-//
+// Opdracht 2
+const soldOutTVs = inventory.filter((tv) => {
+    return tv.originalStock - tv.sold <= 0;
+})
+console.log(soldOutTVs);
