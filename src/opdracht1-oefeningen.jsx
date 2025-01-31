@@ -1,4 +1,4 @@
-import {bestSellingTv as options, inventory} from './constants/inventory.js'
+import {inventory} from './constants/inventory.js'
 
 // Opdracht 1a
 const arrNames = inventory.map((item) => {
