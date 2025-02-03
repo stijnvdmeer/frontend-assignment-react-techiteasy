@@ -1,14 +1,16 @@
 .tvArticle-outer {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     padding: 25px;
+    align-items: center;
 }
 .tvArticle-inner {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    padding-left: 10rem
 }
 
 img {
