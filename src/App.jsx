@@ -5,10 +5,22 @@ import {inventory} from "./constants/inventory.js";
 
 import Button from "./components/Button.jsx";
 import TvArticle from "./components/TvArticle.jsx";
+import {useState} from "react";
+
+
 
 function App() {
-    function tag() {
-        console.log("Tag youre it!");
+    const [tvList, setTvList] = useState([inventory]);
+
+    function sortByMostSold() {
+
+        const newTvList = [...tvList].sort((a, b) => {
+            if(a.sold > b.sold) return 1;
+            if(a.sold < b.sold) return -1;
+            return 0;
+        });
+        console.log(newTvList);
+        setTvList(newTvList);
     }
 
   return (
@@ -17,9 +29,9 @@ function App() {
             <div className="inner-container-large">
                 <h1>Alle TVs</h1>
                 <div>
-                    <Button onButtonClick={tag} buttonText="Meest Verkocht Eerst" classes="btn" />
-                    <Button onButtonClick={tag} buttonText="Meest Verkocht Eerst" classes="btn" />
-                    <Button onButtonClick={tag} buttonText="Meest Verkocht Eerst" classes="btn" />
+                    <Button onButtonClick={sortByMostSold} buttonText="Meest Verkocht Eerst" classes="btn" />
+                    <Button onButtonClick={sortByMostSold} buttonText="Meest Verkocht Eerst" classes="btn" />
+                    <Button onButtonClick={sortByMostSold} buttonText="Meest Verkocht Eerst" classes="btn" />
                 </div>
             </div>
             <div className="inner-container-small">
