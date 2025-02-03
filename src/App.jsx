@@ -23,10 +23,13 @@ function App() {
                 </div>
             </div>
             <div className="inner-container-small">
-                <TvArticle tv={inventory.find((tv) => {
-                    return tv.type === '55PUS7805';
-                })
-                } />
+                {
+                    inventory.map((television) => {
+                        return (
+                            <TvArticle tv={television}/>
+                        );
+                    })
+                }
             </div>
         </main>
     </>
