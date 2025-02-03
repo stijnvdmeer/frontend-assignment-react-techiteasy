@@ -46,8 +46,8 @@ function App() {
 
         const newTvList = [...tvList].sort((a, b) => {
 
-            if (Math.max(a.availableSizes) > Math.max(b.availableSizes)) return -1;
-            if (Math.max(a.availableSizes) < Math.max(b.availableSizes)) return 1;
+            if (Math.max(...a.availableSizes) > Math.max(...b.availableSizes)) return -1;
+            if (Math.max(...a.availableSizes) < Math.max(...b.availableSizes)) return 1;
             return 0;
 
         });
