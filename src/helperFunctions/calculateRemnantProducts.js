@@ -1,6 +1,3 @@
-export default function () {
-    let soldProducts = calculateSoldProducts();
-    let orderedProducts = calculateOrderedProducts();
+export default function (tv) {
 
-    return orderedProducts - soldProducts;
-}
+    return tv.originalStock - tv.sold;
