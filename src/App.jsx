@@ -7,12 +7,12 @@ import {bestSellingTv} from "./constants/inventory.js";
 
 import SalesOverview from "./components/SalesOverview.jsx";
 
-import calculateSoldProducts from "./helperFuntions/calculateSoldProducts.js";
-import calculateOrderedProducts from "./helperFuntions/calculateOrderedProducts.js";
-import calculateRemnantProducts from "./helperFuntions/calculateRemnantProducts.js";
-import getProductTitleString from "./helperFuntions/getProductTitleString.js";
-import formatPriceString from "./helperFuntions/formatPriceString.js";
-import getProductSizesString from "./helperFuntions/getProductSizesString.js";
+import calculateSoldProducts from "./helperFunctions/calculateSoldProducts.js";
+import calculateOrderedProducts from "./helperFunctions/calculateOrderedProducts.js";
+import calculateRemnantProducts from "./helperFunctions/calculateRemnantProducts.js";
+import getProductTitleString from "./helperFunctions/getProductTitleString.js";
+import formatPriceString from "./helperFunctions/formatPriceString.js";
+import getProductSizesString from "./helperFunctions/getProductSizesString.js";
 
 function App() {
   return (
