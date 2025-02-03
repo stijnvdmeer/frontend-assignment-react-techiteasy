@@ -1,0 +1,51 @@
+.outer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.inner-container {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 95vw;
+}
+.icons {
+    height: 25px;
+    width: 25px;
+}
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+
+    li {
+        background-color: lightyellow;
+        border: 3px solid yellow;
+        padding: 10px;
+        border-radius: 10px;
+    }
+}
+
+.salesOverviews {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.bestSoldArticle-outer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    border-radius: 10px;
+    background-color: lightgray;
+    border: 3px dashed black;
+
+    padding: 50px;
+
+}
+.bestSoldArticle-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
