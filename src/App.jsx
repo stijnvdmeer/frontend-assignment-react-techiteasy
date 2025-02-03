@@ -1,6 +1,10 @@
 import './styles/App.css';
+
 //import './opdracht1-oefeningen.jsx';
+import {inventory} from "./constants/inventory.js";
+
 import Button from "./components/Button.jsx";
+import TvArticle from "./components/TvArticle.jsx";
 
 function App() {
     function tag() {
@@ -17,6 +21,12 @@ function App() {
                     <Button onButtonClick={tag} buttonText="Meest Verkocht Eerst" classes="btn" />
                     <Button onButtonClick={tag} buttonText="Meest Verkocht Eerst" classes="btn" />
                 </div>
+            </div>
+            <div className="inner-container-small">
+                <TvArticle tv={inventory.find((tv) => {
+                    return tv.type === '55PUS7805';
+                })
+                } />
             </div>
         </main>
     </>
