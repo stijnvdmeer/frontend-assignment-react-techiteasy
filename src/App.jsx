@@ -36,10 +36,24 @@ function App() {
 
         const newTvList = [...tvList].sort((a, b) => {
             if(a.refreshRate > b.refreshRate) return -1;
-            if(a.refreshRate > b.refreshRate) return 1
+            if(a.refreshRate < b.refreshRate) return 1
             return 0;
         });
         setTvList(newTvList);
+    }
+
+    function sortBySize() {
+
+        const newTvList = [...tvList].sort((a, b) => {
+
+            if (Math.max(a.availableSizes) > Math.max(b.availableSizes)) return -1;
+            if (Math.max(a.availableSizes) < Math.max(b.availableSizes)) return 1;
+            return 0;
+
+        });
+        console.log(newTvList);
+        setTvList(newTvList);
+
     }
 
   return (
@@ -51,6 +65,7 @@ function App() {
                     <Button onButtonClick={sortByMostSold} buttonText="Meest Verkocht Eerst" classes="btn" />
                     <Button onButtonClick={sortByPrice} buttonText="Goedkoopste Eerst" classes="btn" />
                     <Button onButtonClick={sortByRefreshRate} buttonText="Meest Geschikt Voor Sport Eerst" classes="btn" />
+                    <Button onButtonClick={sortBySize} buttonText="Grootste Schermen Eerst" classes="btn" />
                 </div>
             </div>
             <div className="inner-container-small">
