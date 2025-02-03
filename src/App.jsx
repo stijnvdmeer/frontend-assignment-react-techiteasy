@@ -10,16 +10,35 @@ import {useState} from "react";
 
 
 function App() {
-    const [tvList, setTvList] = useState([inventory]);
+    const [tvList, setTvList] = useState(inventory);
 
     function sortByMostSold() {
 
         const newTvList = [...tvList].sort((a, b) => {
-            if(a.sold > b.sold) return 1;
-            if(a.sold < b.sold) return -1;
+            if(a.sold > b.sold) return -1;
+            if(a.sold < b.sold) return 1;
             return 0;
         });
-        console.log(newTvList);
+        setTvList(newTvList);
+    }
+
+    function sortByPrice() {
+
+        const newTvList = [...tvList].sort((a, b) => {
+            if(a.price > b.price) return 1;
+            if(a.price < b.price) return -1;
+            return 0;
+        });
+        setTvList(newTvList);
+    }
+
+    function sortByRefreshRate() {
+
+        const newTvList = [...tvList].sort((a, b) => {
+            if(a.refreshRate > b.refreshRate) return -1;
+            if(a.refreshRate > b.refreshRate) return 1
+            return 0;
+        });
         setTvList(newTvList);
     }
 
@@ -30,13 +49,13 @@ function App() {
                 <h1>Alle TVs</h1>
                 <div>
                     <Button onButtonClick={sortByMostSold} buttonText="Meest Verkocht Eerst" classes="btn" />
-                    <Button onButtonClick={sortByMostSold} buttonText="Meest Verkocht Eerst" classes="btn" />
-                    <Button onButtonClick={sortByMostSold} buttonText="Meest Verkocht Eerst" classes="btn" />
+                    <Button onButtonClick={sortByPrice} buttonText="Goedkoopste Eerst" classes="btn" />
+                    <Button onButtonClick={sortByRefreshRate} buttonText="Meest Geschikt Voor Sport Eerst" classes="btn" />
                 </div>
             </div>
             <div className="inner-container-small">
                 {
-                    inventory.map((television) => {
+                     tvList.map((television) => {
                         return (
                             <TvArticle tv={television}/>
                         );
