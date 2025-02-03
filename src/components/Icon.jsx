@@ -9,6 +9,8 @@ export default function Icon (props) {
     const alt = (props.iconType === true ? "yes" : "no" )
 
     return (
-      <img className="icons" src={type} alt={alt} />
+        <li>
+            <img className="icons" src={type} alt={alt} /><p>{props.name}</p>
+        </li>
     );
 }

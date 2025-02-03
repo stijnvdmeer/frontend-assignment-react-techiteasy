@@ -1,0 +1,9 @@
+.icons  {
+    width: 25px;
+    height: 25px;
+}
+li {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
