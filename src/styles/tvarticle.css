@@ -1,3 +1,16 @@
+.tvArticle-outer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 25px;
+}
+.tvArticle-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 img {
     max-width: 50vw;
     max-height: 50vh;
